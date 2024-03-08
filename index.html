@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" data-dark>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title>Ejercicios del DOM</title>
+</head>
+
+<body data-dark>
+	<header class="header">
+		<h1>Ejercicios del DOM</h1>
+	</header>
+		<button class="panel-btn">&#x2194;</button>
+	<aside class="panel">
+		<nav class="menu">
+			<a href="#section1" >Reloj digital y Alarma Sonora</a>
+			<a href="#section2" >Eventos del Teclado</a>
+			<a href="#section3" >Cuanto falta para tu cumpleaños?</a>
+			<a href="#section4" >section4</a>
+			<a href="#section5" >section5</a>
+		</nav>
+	</aside>
+	<main class="menu-principal">
+		<section id="section1" class="section">
+			<h2>Reloj digital y Alarma Sonora</h2>
+			<div id="displayReloj"></div>
+			<div class="botones">
+				<button id="dameHora">dame Hora</button>
+				<button id="stopHora">para reloj</button>
+				<button id="activar-alarma">alarma</button>
+				<button id="desactivar-alarma">para alarma</button>
+			</div>
+		</section>
+		<section id="section2" class="section">
+			<h2>Eventos del Teclado</h2>
+			<article class="contenedor-ball">
+				<div class="ball"></div>
+			</article>
+		</section>
+		<section id="section3" class="section">
+			<h2>Cuanto falta para tu cumpleaños?</h2>
+			<div id="countDown"></div>
+		</section>
+		<section id="section4" class="section">
+			<h2>section4</h2>
+		</section>
+		<section id="section5" class="section">
+			<h2>section5</h2>
+		</section>
+	</main>
+	<button class="scroll hidden">&#x2191</button>
+	<button class="dark">🌙</button>
+	<script type="module" src="script.js"></script>
+</body>
+
+</html>
