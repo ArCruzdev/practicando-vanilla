@@ -1,5 +1,3 @@
-
-
 export default function responsive(id, mq, movilContent, desktopContent){
     let breakpoint = window.matchMedia(mq)
     
