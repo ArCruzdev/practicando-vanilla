@@ -8,6 +8,9 @@ import darkLight from "./module/tema_dark.js";
 import responsiveTester from "./module/responsive_tester.js";
 import userDeviceInfo from "./module/deteccion_dispositivos.js";
 import estadoRed from "./module/deteccion_estado_red.js";
+import webCam from "./module/deteccion_webcam.js";
+import getGeolocation from "./module/geolocalizacion.js";
+import filtrosBusqueda from "./module/filtro_busqueda.js";
 
 const d = document;
 const w = window;
@@ -25,7 +28,9 @@ d.addEventListener('DOMContentLoaded', e => {
   '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.5920203120895!2d-76.30480752501197!3d3.897252848098619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e39e64306adacfb%3A0x236af63f4e39fbf9!2sBas%C3%ADlica%20Menor%20Se%C3%B1or%20de%20Los%20Milagros!5e0!3m2!1ses!2sco!4v1710041238195!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>')
   responsiveTester('responsive-tester')
   userDeviceInfo('user-device');
-  
+  webCam('webcam')
+  getGeolocation('geolocation')
+  filtrosBusqueda('.card-filter','.card')
 })
 
 d.addEventListener('keydown', e => {
