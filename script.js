@@ -11,6 +11,8 @@ import estadoRed from "./module/deteccion_estado_red.js";
 import webCam from "./module/deteccion_webcam.js";
 import getGeolocation from "./module/geolocalizacion.js";
 import filtrosBusqueda from "./module/filtro_busqueda.js";
+import draw from "./module/sorteo.js";
+import slider from "./module/carrusel.js";
 
 const d = document;
 const w = window;
@@ -31,6 +33,8 @@ d.addEventListener('DOMContentLoaded', e => {
   webCam('webcam')
   getGeolocation('geolocation')
   filtrosBusqueda('.card-filter','.card')
+  draw('#winner-btn','.player')
+  slider()
 })
 
 d.addEventListener('keydown', e => {
