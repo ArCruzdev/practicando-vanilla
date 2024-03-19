@@ -13,6 +13,9 @@ import getGeolocation from "./module/geolocalizacion.js";
 import filtrosBusqueda from "./module/filtro_busqueda.js";
 import draw from "./module/sorteo.js";
 import slider from "./module/carrusel.js";
+import scrollSpy from "./module/scroll_espia.js";
+import smartVideo from "./module/video_inteligente.js";
+import contactFormValidation from "./module/validaciones_formularios.js";
 
 const d = document;
 const w = window;
@@ -35,6 +38,9 @@ d.addEventListener('DOMContentLoaded', e => {
   filtrosBusqueda('.card-filter','.card')
   draw('#winner-btn','.player')
   slider()
+  scrollSpy()
+  smartVideo()
+  contactFormValidation()
 })
 
 d.addEventListener('keydown', e => {
@@ -44,3 +50,5 @@ d.addEventListener('keydown', e => {
 
 darkLight('.dark', 'darkLight')
 estadoRed()
+
+console.log(new RegExp())
