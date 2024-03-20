@@ -16,6 +16,7 @@ import slider from "./module/carrusel.js";
 import scrollSpy from "./module/scroll_espia.js";
 import smartVideo from "./module/video_inteligente.js";
 import contactFormValidation from "./module/validaciones_formularios.js";
+import speechReader from "./module/narrador.js";
 
 const d = document;
 const w = window;
@@ -47,8 +48,7 @@ d.addEventListener('keydown', e => {
   moveBall('.contenedor-ball', '.ball', e)
   shortcuts(e)
 })
-
 darkLight('.dark', 'darkLight')
 estadoRed()
+speechReader()
 
-console.log(new RegExp())

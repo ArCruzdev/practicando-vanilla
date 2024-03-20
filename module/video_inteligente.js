@@ -9,7 +9,9 @@ export default function smartVideo(){
                 entry.target.pause();
             }
 
-            window.addEventListener('visibilitychange', e=> document.visibilityState === 'visible' ?entry.target.play():entry.target.pause() )
+            window.addEventListener('visibilitychange', e=> document.visibilityState === 'visible' 
+            ? entry.target.play() 
+            : entry.target.pause() )
         });
     }
 

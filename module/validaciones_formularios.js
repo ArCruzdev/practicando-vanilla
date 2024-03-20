@@ -25,4 +25,21 @@ export default function contactFormValidation(){
             }
         }
     })
+
+    document.addEventListener('submit', e=> {
+        //e.preventDefault();
+        alert('enviando formulario')
+
+        const $loader = document.querySelector('.contact-from-loader')
+        const $response = document.querySelector('.contact-form-response')
+
+        $loader.classList.remove('none')
+
+        setTimeout(()=>{
+            $loader.classList.add('none')
+            $response.classList.remove('none')
+            $form.reset()
+            setTimeout(() => $response.classList.add('none'),3000)
+        }, 3000)
+    })
 }
